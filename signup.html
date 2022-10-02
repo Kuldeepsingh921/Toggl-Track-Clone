@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <script src="https://kit.fontawesome.com/2515506460.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: #412a4c;
+        }
+        #nav{
+            border: 0px solid red;
+            height: 100px;
+            background-color: #412a4c;
+            
+            margin: auto;
+    }
+    #nav>img{
+        margin: 30px 0px 0px 30px;
+        height: 40%;
+        cursor: pointer;
+    }
+     #nav+div{
+        border: 0px solid red;
+        height: 200px;
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+     }   
+     #nav+div>h1{
+        font-size: 55px;
+        font-family: "GT Haptik Medium", sans-serif;
+        font-weight: bold;
+        color: rgb(255, 243, 237);
+     }
+     #nav+div>h1>span>em{
+        color: rgb(229, 124, 216);
+     }
+     #nav+div>p{
+        margin-top: 20px;
+        width: 70%;
+        color: #FCE5D8;
+        font-size: 20px;
+        line-height: 30px;
+     }
+     #nav+div>p>span+a{
+        color: rgb(229, 124, 216);
+     }
+     #mid{
+        border: 0px solid red;
+        height: 530px;
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,450px);
+        padding: 20px 0px 0px 0px ;
+        gap: 20px;
+     }
+     #mid>div>form{
+        border: 0px solid green;
+        width: 90%;
+        padding: 20px;
+        background-color: #2c1338 ;
+     }
+     #mid>div>form>label{
+        margin-left: 10px;
+        color: #FCE5D8;
+        background-color: #2c1338;
+     }
+     #mid>div>form>button:nth-child(1){
+         background-color: white;
+         width: 45%;
+         margin: 30px 0px 0px 0px;
+        font-family: 'GT Haptik Medium',sans-serif;
+        color: #2C1338;
+        font-weight: bold;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        border-radius: 25px;
+        padding: 11px 22px 19px 12px;
+     }
+     #mid>div>form>button:nth-child(1):hover{
+        cursor: pointer;
+        background-color: #FCE5D8;
+     }
+     #mid>div>form>button:nth-child(1)>.fa-google{
+        margin-right: 10px;
+        font-size: 20px;
+        background-color: transparent;
+     }
+     #mid>div>form>button:nth-child(2){
+        background-color: white;
+        margin: 30px 20px;
+        width: 45%;
+        font-family: 'GT Haptik Medium',sans-serif;
+        color: #2C1338;
+        font-weight: bold;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        border-radius: 25px;
+        padding: 11px 22px 19px 26px;
+     }
+     #mid>div>form>button:nth-child(2):hover{
+        cursor: pointer;
+        background-color: #FCE5D8;
+     }
+     #mid>div>form>button:nth-child(2)>.fa-apple{
+        margin-right: 10px;
+        font-size: 20px;
+        background-color: transparent;
+     }
+     #mid>div>form>input{
+        color: white;
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 8px;
+        height: 50px;
+        border:1px solid grey;
+        width: 90%;
+        margin: 10px 0px 20px 0px;
+        background-color: #2c1338;
+     }
+     #mid>div>form>#btn{
+        background-color: rgb(229, 124, 216);;
+        margin: 30px 20px 0px 20px;
+        width: 90%;
+        font-family: 'GT Haptik Medium',sans-serif;
+        color: #2C1338;
+        font-weight: bold;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 22px 19px 26px;
+     }
+     #mid>div>form>#btn:hover{
+        cursor: pointer;
+        background-color: #ae95b9;
+     }
+     #mid>div>form>p{
+        color: #FCE5D8;
+        margin-top: 30px;
+        background-color: #2c1338 ;
+     }
+     #mid>div>form>p>span{
+        text-decoration: underline;
+        background-color: #2c1338 ;
+     }
+     #mid>div>form>p>span:hover{
+        cursor: pointer;
+        color: rgb(229, 124, 216);
+     }
+     #mid>div+div{
+        border: 0px solid green;
+        height: 100%;
+     }
+     #mid>div+div>h4{
+        font-size: 25px;
+        margin-top: 50px;
+        color: rgb(253, 241, 236);
+        font-family: "GT Haptik Medium", sans-serif;
+        font-weight: 400;
+     }
+     #mid>div+div>h4>em{
+        font-family: "GT Haptik Medium Rotalic", sans-serif;
+        color: rgb(255, 222, 145);
+     }
+     #mid>div+div>p{
+        color: rgb(253, 241, 236);
+        margin-top: 40px;
+     }
+     #mid>div+div>img{
+         margin-top: 80px;
+     }
+     #btm{
+        border: 0px solid red;
+        height: 50px;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(229, 124, 216);
+     }
+     #btm>p{
+        margin: 0px 40px 0px 40px;
+        font-size: 15px;
+        background-color: rgb(229, 124, 216);
+     }
+     #btm>p+p{
+        cursor: pointer;
+        text-decoration: underline;
+     }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img onclick="home()" src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="">
+    </div>
+    <div>
+     <h1><span>Sign up for a <em>free</em> Toggl Track account</span></h1>
+     <p>All plans come with a free, 30-day trial of Toggl Track Premium—no credit card required.
+        Upgrade at the end of the trial or continue using Track for free.</p>
+     <p><span>Already have an account?</span> <a href="login.html">Log in here</a> </p>
+
+     <h2 id="result"></h2>
+    </div>
+    <div id="mid">
+       <div>
+        <form>
+            <button><i class="fa-brands fa-google"></i>Sign up via Google</button>
+          <button><i class="fa-brands fa-apple"></i>Sign up via Apple</button> <br>
+            <label for="">Email</label><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <label for="">Password</label><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <button id="btn" onclick="signup()">Sign up via email</button>
+            <p>By signing up, you agree to our <span>terms of service</span>, <span>privacy policy</span> and to receiving marketing communication from Toggl Track. You can opt out anytime.</p>
+        </form>
+       </div>
+       <div>
+        <h4>“
+            Toggl Track has a very straightforward interface. It's easy to start, stop and edit time entries and to review your own work and the work of colleagues. <br>
+            
+            <em>It just works</em>, even in a team where some members find new interfaces challenging.</h4>
+        <p>— Verified G2Crowd review. 5/5 stars.</p>
+        <img src="https://public-assets.toggl.com/b/static/6b5c09dd5baafcca069103cd517b38c9/67548/review-badges.avif" alt="">
+       </div>
+    </div>
+    <div id="btm">
+        <p>© 2022 Toggl. All rights reserved.</p>
+        <p>Legal Terms</p>
+    </div>
+</body>
+</html>
+
+<script>
+   document.querySelector("form").addEventListener("click",form)
+   function form(event){
+      event.preventDefault()
+      document.querySelector("#btn")
+     
+   }
+   let result=document.querySelector("#result")
+   let arr= JSON.parse(localStorage.getItem("credentials")) || []
+   function signup(){
+      result.innerText=" You Signed in Successfull"
+      result.style.color="green"
+      let obj={
+         email:document.querySelector("#email").value,
+         password:document.querySelector("#password").value,
+      }
+      
+      arr.push(obj);
+      
+      localStorage.setItem("credentials",JSON.stringify(arr))
+      
+ }
+   function home(){
+      window.location.href="index.html"
+   }
+</script>
