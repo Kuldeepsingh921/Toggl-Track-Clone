@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Demo</title>
+    <script src="https://kit.fontawesome.com/2515506460.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav1{
+            border: 0px solid green;
+            height: 20px;
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            background-color: #e57cd8;
+            line-height: 1.35;
+            cursor: pointer;
+            color: #2C1338;
+        }
+        #nav1>div{
+            margin-right: 20px;
+        }
+        #nav1>div:hover{
+            text-decoration: underline;
+        }
+        #nav2{
+            height: 80px;
+            border: 0px solid green;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c1338;
+        }
+        #nav2>.child>div:hover{
+           cursor: pointer;
+           color: #e57cd8;
+        }
+        .child{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: #FFF3ED;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400px;
+            margin: 0px 25px 0px 25px;
+        }
+        .child>div>img{
+            height: 50px;
+            width: 70%;
+        }
+        .child>div>button{
+            font-size: 16px;
+            color: #e57cd8;
+            background-color: #FCE5D8;
+            cursor: pointer;
+            height: 50px;
+            border-radius: 25px;
+            width: 150px;
+        }
+        .child>div>button:hover{
+            background-color: #5e4968;
+        }
+        #nav2>.child>div>a{
+            color: #FFF3ED;
+            text-decoration: none;
+        }
+        #nav2>.child>div>a:hover{
+              color: #e57cd8;
+              cursor: pointer;
+        }
+        #navbtm{
+            border: 0px solid red;
+            height: 1000px;
+            background-color:#2c1338;
+            
+        }
+        #navbtm1{
+          border: 0px solid pink;
+          height: 900px;
+          display: flex;
+          width: 80%;
+          margin: auto;
+          justify-content: space-around;
+          
+        }
+        #navbtm1>div{
+            margin-top: 100px;
+            border: 0px solid red;
+            width: 38%;
+        }
+        #navbtm1>div>h1{
+            font-size: 35px;
+            color: #FDF1EC;
+            font-family: 'GT Haptik Medium',sans-serif;
+            font-weight: bold;
+        }
+        #navbtm1>div>h1>em{
+            color: #e57cd8;
+        }
+        #navbtm1>div>h4{
+            color: #FDF1EC;
+            margin-top: 50px;
+            font-size: 19px;
+        }
+        #navbtm1>div>li{
+            color: #FDF1EC;
+            font-size: 18px;
+            margin-top: 30px;
+            list-style-type:square ;
+        }
+        #navbtm1>div>p{
+            font-family: 'GT Haptik Medium',sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #706f6e;
+            font-weight: bold;
+            margin-top: 80px;
+        }
+        #navbtm1>div>p+img{
+            width: 100%;
+            margin-top: 30px;
+        }
+        #navbtm1>div>p+img+div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+        }
+        #navbtm1>div>p+img+div>div{
+            margin-left: 10px;
+        }
+        #navbtm1>div>p+img+div>div>p{
+            margin-top: 10px;
+            color: #FDF1EC;
+            font-size: 17px;
+            line-height: 25px;
+        }
+        #navbtm1>div>p+img+div>div>h4{
+            margin-top: 10px;
+            color: #e57cd8;
+            cursor: pointer;
+        }
+        #child{
+            background-color:#fce5d8;
+            height: 720px;
+            padding: 30px;
+        }
+        #child>h3{
+            font-size: 22px;
+            font-weight: bold;
+            color: #33475b;
+            word-break: break-word;
+            margin-bottom: 30px;
+        }
+        #child>label,option{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        #child>input,select{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        #child>img{
+            height: 100px;
+            width: 60%;
+        }
+        #child>button{
+            font-size: 15px;
+            font-weight: bold;
+            height: 50px;
+            width: 30%;
+            margin:30px 0px 0px  150px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #e57cd8;
+            cursor: pointer;
+        }
+        #navbtm+div{
+            border: 0px solid red;
+            background-color: #412a4c;
+            height: 430px;
+        }
+        #navbtm+div>div{
+            display: flex;
+            
+            justify-content: space-around;
+            border: 0px solid green;
+            height: 350px;
+            width: 80%;
+            margin: auto;
+        }
+        #navbtm+div>div>div{
+            border: 0px solid pink;
+            width: 55%;
+            margin-top: 50px;
+        }
+        #navbtm+div>div>div>h3{
+            font-size: 25px;
+            margin-top: 30px;
+            color: #FDF1EC;
+            font-family: 'GT Haptik Medium',sans-serif;
+            font-weight: 400;
+        }
+        #navbtm+div>div>div>p{
+            margin-top: 50px;
+            color: #FDF1EC;
+            text-decoration: underline;
+        }
+        #navbtm+div>div>div>img{
+            margin-left: 200px;
+        }
+        #SBD{
+            border: 0px solid red;
+            height: 200px;
+            background-color: #564260;
+        }
+        #SBD>div{
+            width: 80%;
+            margin: auto;
+        }
+        #footer{
+        border: 1px solid #2C1338;
+        height: 460px;
+        background-color: #2C1338;
+    }
+    #footerlogo{
+        border: 0px solid green;
+        height: 40px;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #footerlogo>img{
+        height: 100%;
+    }
+    #footerlogo+div{
+        border: 0px solid pink;
+        height: 250px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 20px;
+    }
+    #footerlogo+div>div>h5+p{
+        margin-top: 20px;
+    }
+    #footerlogo+div>div>p{
+        color: #FFF3ED;
+        line-height: 30px; 
+    }
+    #footerlogo+div>div>h5{
+        margin-left: -120px;
+        color: #9266a6;
+        text-align: center;
+    }
+    #footerlogo+div+div{
+        border: 0px solid red;
+        height: 70px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-size: 30px;
+        color: #FFF3ED;
+    }
+    #footerlogo+div>div>p:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+    #footerlogo+div+div>div:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+   #SLD{
+    border: 0px solid red;
+    background-color: #412a4c ;
+    height: 100px;
+    display: flex;
+    gap: 100px;
+   
+   }
+   #SLD>div>img{
+    height: 60%;
+   }
+   #SLD>div>h5{
+    font-size: 15px;
+    margin-top: -15px;
+    color: #FFF3ED;
+   }
+   #SLD>div>h4{
+    color: #FCE5D8;
+    font-size: 17px;
+    margin:30px 0px 0px 50px;
+    width: 70%;
+   }
+   #SLD+div{
+    border: 1px solid #E57CD8;
+    height: 50px;
+    background-color: #E57CD8;
+   }
+   #SLD+div>p{
+    margin:20px 0px 0px 50px;
+    font-family: 'Inter', sans-serif;
+    color: #2C1338;
+   }
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <div>Back to Toggl Global</div>
+        <div>Products</div>
+        <div>Blog</div>
+        <div>Our Mission</div>
+        <div>Working at Toggl</div>
+    </div>
+    <div id="nav2">
+        <div class="child">
+            <div> 
+            <img onclick="home()" src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png"  alt="">
+            </div>
+            <div>Product</div>
+            <div>Pricing</div>
+            <div>Why Track?</div>
+            <div>Careers</div>
+        </div>
+        <div  class="child">
+            <div>  <a  href="book a Demo.html">Book a Demo</a></div>
+            <div> <a  href="login.html">Log in</a> </div>
+            <div> <a href=""> |</a></div>
+           <div><button > <a style="text-decoration: none; color: #E57CD8;;" href="signup.html">Try For Free</a> </button></div> 
+        </div>
+    </div>
+    <div id="navbtm">
+        <div id="navbtm1">
+            <div>
+                <h1>Book your <em>free demo</em> of Toggl Track</h1>
+                <h4>Explore how you can use Toggl Track with your team to:</h4>
+                <li>Accurately scope projects and pinpoint scope creep</li>
+                <li>Plan and quote project budgets with confidence</li>
+                <li>Improve staffing and team allocation</li>
+                <li>Ensure project and client profitability</li>
+                <li>Integrate time tracking with the tools your team uses</li>
+                <p>TRUSTED BY 70,000+ TEAMS WORLDWIDE</p>
+                <img src="https://public-assets.toggl.com/b/static/3823ebd7e0f7f9fe55cc83646c5d683e/8428e/logo-demo-companies.avif" alt="">
+                <div>
+                    <div>
+                        <img src="https://public-assets.toggl.com/b/static/5264c338174fe1ea20f3162461d5f954/14b67/illo-computer-tilt.avif" alt="">
+                    </div>
+                    <div>
+                        <p>Looking for help with general questions or a technical issue?</p>
+                        <h4>Contact our Support team ></h4>
+                    </div>
+                </div>
+            </div>
+            <div id="child">
+                <h3>Onboarding a large team? Teams of 10+ are eligible for a custom 30-minute demo.</h3>
+                <label for=""> First Name*</label><br>
+                <input type="text"><br>
+                <label for="">Last Name*</label><br>
+                <input type="text"><br>
+                <label for="">Company Email*</label><br>
+                <input type="email"><br>
+                <label for="">Phone Number</label><br>
+                <select name="" id="">
+                    <option value="India">India</option>
+                    <option value="">America</option>
+                    <option value="">England</option>
+                    <option value="">Germany</option>
+                </select>
+                <input type="number"><br>
+                <label for="">How many people will be using Toggl Track*</label><br>
+                <input type="number"><br>
+                <label for="">I plan to use Toggle Track primarily for:*</label><br>
+                <select name="" id="">
+                    <option value="">Select an Option</option>
+                    <option value="">Billing Clients</option>
+                    <option value="">Payroll.Paying contracts or employees</option>
+                    <option value="">Planning.Assessing profitability,productivity,and employee well being</option>
+                    <option value="">Something else</option>
+                </select>
+                <img src="https://developers.google.com/static/recaptcha/images/invisible_badge.png" alt="">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            
+            <div>
+                <h3>“Toggl Track has given us actual data about our labor; we're able to see how much time each step of our creative process takes.”</h3>
+                <p>— RogueMark Studios, Creative Agency</p> 
+             </div>
+             <div>
+                 <img src="https://public-assets.toggl.com/b/static/c09775279d4d284adf0b2b3f09700ca6/40080/cs-roguemark-tilt.avif" alt="">
+             </div>
+        </div>
+    </div>
+    <div id="SBD">
+        <div>
+            <img src="https://public-assets.toggl.com/b/static/50743fb0844854055a48bfacbe48040d/f13d4/reviews-badge-desktop.avif" alt="">
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerlogo">
+         <img src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="">
+        </div>
+        <div>
+         <div>
+             <h5>TOGGLE GLOBAL</h5>
+             <p>Blog</p>
+             <p>Our Mission</p>
+             <p>Working at Toggl</p>
+             <p>Legal Terms</p>
+         </div>
+         <div>
+             <h5>PRODUCT</h5>
+             <p>Features</p>
+             <p>Pricing</p>
+             <p>Integrations</p>
+             <p>Case Studies</p>
+             <p>API</p>
+         </div>
+         <div>
+             <h5>USE CASES</h5>
+             <p>Billing and Invoicing</p>
+             <p>Employee Time Tracking</p>
+             <p>Project Budgeting</p>
+             <p>Reporting</p>
+             <p>Payroll</p>
+         </div>
+         <div>
+             <h5>DOWNLOAD</h5>
+             <p>Mobile Apps</p>
+             <p>Desktop Apps</p>
+             <p>Browser Extensions</p>
+         </div>
+         <div>
+             <h5>HELP</h5>
+             <p>Support & Knowledge Base</p>
+             <p>Request A Demo</p>
+             <p>Contact Us</p>
+         </div>
+         <div>
+             <h5>RESOURCES</h5>
+             <p>Time Management Hub</p>
+             <p>Work From Home Hub</p>
+             <p>Business Resources</p>
+             <p>Productivity Resources</p>
+             <p>Timesheet Templates</p>
+             <p>Media Kit</p>
+         </div>
+        </div>
+        <div>
+         <div><i class="fa-brands fa-twitter"></i></div>
+         <div><i class="fa-brands fa-facebook"></i></div>
+         <div><i class="fa-brands fa-instagram"></i></div>
+         <div><i class="fa-brands fa-youtube"></i></div>
+         <div><i class="fa-brands fa-linkedin"></i></div>
+         <div><i class="fa-brands fa-github"></i></div>
+        </div>
+     </div>
+     <!-- 2nd last div -->
+     <div id="SLD">
+         <div>
+             <h4>Discover other Toggl tools:</h4>
+         </div>
+         <div>
+             <img src="https://www.howtoweb.co/wp-content/uploads/2020/06/Logos-website-15-900x500.png" alt="">
+             <h5>Beautifully simple work planning</h5>
+         </div>
+         <div>
+             <img src="https://www.howtoweb.co/wp-content/uploads/2020/06/Logos-website-12-900x500.png" alt="">
+             <h5>Skills-based hiring</h5>
+         </div>
+     </div>
+     <div>
+       <p>© 2022 Toggl. All rights reserved.</p>
+     </div>
+     </div>
+</body>
+</html>
+
+<script>
+    function home(){
+        window.location.href="index.html"
+    }
+</script>
