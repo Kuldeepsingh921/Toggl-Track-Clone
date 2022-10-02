@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/2515506460.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav1{
+            border: 0px solid green;
+            height: 20px;
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            background-color: #e57cd8;
+            line-height: 1.35;
+            cursor: pointer;
+            color: #2C1338;
+        }
+        #nav1>div{
+            margin-right: 20px;
+        }
+        #nav1>div:hover{
+            text-decoration: underline;
+        }
+        #nav2{
+            height: 80px;
+            border: 0px solid green;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c1338;
+        }
+        #nav2>.child>div:hover{
+           cursor: pointer;
+           color: #e57cd8;
+        }
+        .child{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: #FFF3ED;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400px;
+            margin: 0px 25px 0px 25px;
+        }
+        .child>div>img{
+            height: 50px;
+            width: 90%;
+        }
+        .child>div>button{
+            font-size: 16px;
+            color: #e57cd8;
+            background-color: #FCE5D8;
+            cursor: pointer;
+            height: 50px;
+            border-radius: 25px;
+            width: 150px;
+        }
+        .child>div>button:hover{
+            
+            background-color: #5e4968;
+        }
+        #nav2>.child>div>a{
+            color: #FFF3ED;
+            text-decoration: none;
+        }
+        #nav2>.child>div>a:hover{
+              color: #e57cd8;
+              cursor: pointer;
+        }
+        #mid{
+            border: 1px solid #412a4c;
+            height: 1200px;
+            background-color:#412a4c;
+        }
+        #mid>h1{
+            margin-top: 150px;
+            font-size: 55px;
+            text-align: center;
+            font-family: "GT Haptik Medium", sans-serif;
+            font-weight: bold;
+            color: rgb(255, 243, 237);
+        }
+        #mid>p{
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(255, 243, 237);
+        }
+        #mid>p+div{
+            border:0px solid red;
+            height: 600px;
+            width: 45%;
+            margin: auto;
+            margin-top: 20px;
+            background-color: #2c1338;
+            padding-bottom: 30px;
+        }
+        #mid>p+div>div>button{
+            height: 50px;
+            margin-top: 100px;
+            width: 40%;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-left:40px ;
+        }#mid>p+div>div>button:hover{
+            cursor: pointer;
+            background-color: #f6e6dd;
+        }
+        #mid>p+div>div>button>.fa-google,.fa-apple{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+        #form{
+           
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #form>label{
+            
+            font-size: 20px;
+            margin-left: 40px;
+            color: rgb(255, 243, 237);
+        }
+        #form>input{
+            border-radius: 5px;
+            font-size: 20px;
+            color: #fff;
+            margin-top: 10px;
+            padding: 5px;
+            height: 50px;
+            margin-left: 40px;
+            margin-bottom: 30px;
+            width: 83%;
+            border:1px solid grey;
+            background-color:#2c1338;
+        }
+        #form>p{
+            font-size: 20px;
+            text-align: end;
+            margin-right: 20px;
+            text-decoration: underline;
+            color: rgb(255, 243, 237);;
+        }
+        #form>p:hover{
+            color: #e57cd8;
+            cursor: pointer;
+        }
+        #form+button{
+            height: 50px;
+            width: 90%;
+            margin: 20px 0px 0px 35px;
+            border: none;
+            border-radius: 25px;
+            background-color: #e57cd8;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        #form+button:hover{
+            cursor: pointer;
+            background-color: #af9bb9;
+        }
+        #form+button+p{
+            margin-top: 40px;
+            text-align: center;
+            font-size: 17px;
+            color: rgb(255, 243, 237);
+        }
+        #form+button+p:hover{
+            color: #e57cd8;
+            cursor: pointer;
+        }
+      #mid>button{
+        margin-top: 20px;
+        margin-left: 660px;
+        height: 50px;
+        border: none;
+        width: 200px;
+        border-radius: 25px;
+        background-color: #e57cd8;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      #mid>button:hover{
+        cursor: pointer;
+        background-color: #af9bb9;
+      }
+      #footer{
+        border: 1px solid #2C1338;
+        height: 460px;
+        background-color: #2C1338;
+    }
+    #footerlogo{
+        border: 0px solid green;
+        height: 40px;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #footerlogo>img{
+        height: 100%;
+    }
+    #footerlogo+div{
+        border: 0px solid pink;
+        height: 250px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 20px;
+    }
+    #footerlogo+div>div>h5+p{
+        margin-top: 20px;
+    }
+    #footerlogo+div>div>p{
+        color: #FFF3ED;
+        line-height: 30px; 
+    }
+    #footerlogo+div>div>h5{
+        color: #9266a6;
+    }
+    #footerlogo+div+div{
+        border: 0px solid red;
+        height: 70px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-size: 30px;
+        color: #FFF3ED;
+    }
+    #footerlogo+div>div>p:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+    #footerlogo+div+div>div:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+   #SLD{
+    border: 0px solid red;
+    background-color: #412a4c ;
+    height: 100px;
+    display: flex;
+    gap: 100px;
+   
+   }
+   #SLD>div>img{
+    height: 60%;
+   }
+   #SLD>div>h5{
+    font-size: 15px;
+    margin-top: -15px;
+    color: #FFF3ED;
+   }
+   #SLD>div>h4{
+    color: #FCE5D8;
+    font-size: 17px;
+    margin:30px 0px 0px 50px;
+    width: 70%;
+   }
+   #SLD+div{
+    border: 1px solid #E57CD8;
+    height: 50px;
+    background-color: #E57CD8;
+   }
+   #SLD+div>p{
+    margin:20px 0px 0px 50px;
+    font-family: 'Inter', sans-serif;
+    color: #2C1338;
+   }
+   
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <div>Back to Toggl Global</div>
+        <div>Products</div>
+        <div>Blog</div>
+        <div>Our Mission</div>
+        <div>Working at Toggl</div>
+    </div>
+    <div id="nav2">
+        <div class="child">
+            <div> 
+            <img onclick="home()" src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="">
+            </div>
+            <div>Product</div>
+            <div>Pricing</div>
+            <div>Why Track?</div>
+            <div>Careers</div>
+        </div>
+        <div  class="child">
+            <div> <a  href="book a Demo.html">Book a Demo</a> </div>
+            <div> <a  href="login.html">Log in</a> </div>
+            <div> <a href="">|</a> </div>
+           <div><button> <a style="color:#E57CD8;text-decoration: none;" href="signup.html">Try For Free</a> </button></div> 
+        </div>
+    </div>
+
+    <div id="mid">
+        
+
+       <h1>Log in to your account</h1>
+       <h2 id="result" style="text-align: center;"></h2>
+       <p>Let's get tracking!</p>
+       <div>
+            <div>
+            <button><i class="fa-brands fa-google"></i>Login via Google</button>
+            <button><i class="fa-brands fa-apple"></i>Login via Apple</button>
+            </div>
+        
+        <div id="form">
+        <label for="">Email</label><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <label for="" >Password</label><br>
+        <input type="password" id="password" placeholder="Password">
+        <p>Forget Password?</p>
+        </div>
+        <button onclick="login()">Log in</button>
+        <p><i class="fa-regular fa-lock-keyhole"></i>Company login (SSO)</p>
+      </div>
+      <p style="margin-top: 100px; font-size:25px ;">Don't have an account?</p>
+      <button>Sign up for free</button>
+    </div>
+    <div id="footer">
+        <div id="footerlogo">
+         <img src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="">
+        </div>
+        <div>
+         <div>
+             <h5>TOGGLE GLOBAL</h5>
+             <p>Blog</p>
+             <p>Our Mission</p>
+             <p>Working at Toggl</p>
+             <p>Legal Terms</p>
+         </div>
+         <div>
+             <h5>PRODUCT</h5>
+             <p>Features</p>
+             <p>Pricing</p>
+             <p>Integrations</p>
+             <p>Case Studies</p>
+             <p>API</p>
+         </div>
+         <div>
+             <h5>USE CASES</h5>
+             <p>Billing and Invoicing</p>
+             <p>Employee Time Tracking</p>
+             <p>Project Budgeting</p>
+             <p>Reporting</p>
+             <p>Payroll</p>
+         </div>
+         <div>
+             <h5>DOWNLOAD</h5>
+             <p>Mobile Apps</p>
+             <p>Desktop Apps</p>
+             <p>Browser Extensions</p>
+         </div>
+         <div>
+             <h5>HELP</h5>
+             <p>Support & Knowledge Base</p>
+             <p>Request A Demo</p>
+             <p>Contact Us</p>
+         </div>
+         <div>
+             <h5>RESOURCES</h5>
+             <p>Time Management Hub</p>
+             <p>Work From Home Hub</p>
+             <p>Business Resources</p>
+             <p>Productivity Resources</p>
+             <p>Timesheet Templates</p>
+             <p>Media Kit</p>
+         </div>
+        </div>
+        <div>
+         <div><i class="fa-brands fa-twitter"></i></div>
+         <div><i class="fa-brands fa-facebook"></i></div>
+         <div><i class="fa-brands fa-instagram"></i></div>
+         <div><i class="fa-brands fa-youtube"></i></div>
+         <div><i class="fa-brands fa-linkedin"></i></div>
+         <div><i class="fa-brands fa-github"></i></div>
+        </div>
+     </div>
+     <!-- 2nd last div -->
+     <div id="SLD">
+         <div>
+             <h4>Discover other Toggl tools:</h4>
+         </div>
+         <div>
+             <img src="https://www.howtoweb.co/wp-content/uploads/2020/06/Logos-website-15-900x500.png" alt="">
+             <h5>Beautifully simple work planning</h5>
+         </div>
+         <div>
+             <img src="https://www.howtoweb.co/wp-content/uploads/2020/06/Logos-website-12-900x500.png" alt="">
+             <h5>Skills-based hiring</h5>
+         </div>
+     </div>
+     <div>
+       <p>© 2022 Toggl. All rights reserved.</p>
+     </div>
+     </div>
+</body>
+</html>
+<script>
+   
+    let arr1= JSON.parse(localStorage.getItem("credentials")) || []
+    let result=document.querySelector("#result")
+
+    function login(){
+        let count=0;
+        let email=document.querySelector("#email").value;
+        let password=document.querySelector("#password").value;
+        arr1.forEach(function(el){
+             if(email==el.email && password==el.password){
+                count++;
+             }
+             if(count!=0){
+                result.innerText="You logged in Successfully"
+                result.style.color="green"
+             }
+             else{
+                result.innerText="You entered wrong credentials"
+                result.style.color="red"
+             }
+        })
+
+    }
+    function home(){
+        window.location.href="index.html"
+    }
+</script>
