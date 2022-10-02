@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://kit.fontawesome.com/2515506460.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav1{
+            border: 0px solid green;
+            height: 20px;
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            background-color: #e57cd8;
+            line-height: 1.35;
+            cursor: pointer;
+            color: #2C1338;
+        }
+        #nav1>div{
+            margin-right: 20px;
+        }
+        #nav1>div:hover{
+            text-decoration: underline;
+        }
+        #nav2{
+            width: 100%;
+            height: 80px;
+            border: 0px solid green;
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c1338;
+            
+        }
+        .child{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: #FFF3ED;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400px;
+            margin: 0px 25px 0px 25px;
+        }
+        .child>div>img{
+            height: 50px;
+            width: 90%;
+        }
+        .child>div>button{
+            font-size: 16px;
+            color: #e57cd8;
+            background-color: #FCE5D8;
+            cursor: pointer;
+            height: 50px;
+            border-radius: 25px;
+            width: 150px;
+        }
+        .child>div>button:hover{
+            background-color: #5e4968;
+        }
+        #nav2>.child>div>a{
+            color: #FFF3ED;
+            text-decoration: none;
+        }
+        #nav2>.child>div>a:hover{
+              color: #e57cd8;
+              cursor: pointer;
+        }
+        
+        #navBtm{
+            background-color: #2c1338;
+            height: 700px;
+           /* margin-top: -34px; */
+           /* margin-top: 80px; */
+        }
+        #navBtm>div{
+            width: 80%;
+            border: 0px solid red;
+            margin: auto;
+            height: 697px;
+        }
+        #navBtm>div>div>h1{
+            margin: 0px 0px 0px 30px;
+            width: 65%;
+            font-size: 50px;
+            color: #FCE5D8;
+            font-family: 'Inter', sans-serif;
+        }
+        #navBtm>div>div>h1>em{
+            color: #e57cd8;
+        }
+        #navBtm>div>div>p{
+            margin-left: 30px;
+            width: 50%;
+            font-size: 25px;
+            font-family: 'Inter', sans-serif;
+            color: #FCE5D8;
+        }
+        #navBtm>div>input{
+            border-radius: 5px;
+            padding: 8px;
+            font-size: 17px;
+            color: #FCE5D8;
+            height: 50px;
+            width: 40%;
+            margin-top: 20px;
+            margin-left: 20px;
+            background-color: #2C1338;
+            border: 1px solid grey;
+        }
+        #logo{
+            width: 50%;
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 50px;
+        }
+        #logo>div>button{
+            margin: 20px 0px 0px 20px ;
+            height: 50px;
+            width: 250px;
+            border-radius: 30px;
+            font-family: 'GT Haptik Medium',sans-serif;
+            font-size: 16px;
+            padding: 14px 35px;
+            background-color: #E57CD8;
+            color: #FFF;
+            cursor: pointer;
+            border: none;
+        }
+        #logo>div>button:hover{
+            background-color: #5e4968;
+        }
+        #or{
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        #or>div>p{
+          color: #FCE5D8;
+        }
+        #or>div>button{
+            font-size: 25px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        #P1{
+            margin-left: 20px;
+            width: 45%;
+            color: #FCE5D8;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        #P1>span{
+            text-decoration: underline;
+        }
+        #navBtm h4{
+            margin-left: 20px;
+            color: #D5D0D7;
+            font-family: 'GT Haptik Medium',sans-serif;
+            font-weight: 400;
+        }
+        #navBtm h4+div>img{
+            margin-left: 20px;
+        }
+       #midh2{
+        margin: auto;
+        width: 50%;
+        font-size: 30px;
+        color: #412A4C;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: 400;
+        line-height: 45px;
+        text-align: center;
+       }
+       #midh2+div{
+        width: 55%;
+        border: 0px solid red;
+        margin: auto;
+       }
+       #midh2+div>button{
+        
+        font-size: 25px;
+        font-family:'GT Haptik Medium',sans-serif;
+        font-size: 1rem;
+        border: none;
+        border-radius: 100px;
+        background: #ffebbd;
+        color: #412A4C;
+        padding: 13px 20px;
+       }
+       #midh2+div>#btn{
+         background-color: #412A4C;;
+         color: #ffebbd;
+       }
+       #midh2+div>button>em{
+        font-weight: bold;
+       }
+       #li{
+        height: 370px;
+        width: 70%;
+        padding: 20px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        background: #412A4C;
+        border-radius: 12px;
+        box-shadow: 0 1px 20px rgb(0 0 0 / 10%);
+       } 
+      #li>div>h2,li{
+        font-size: 20px;
+        color: #FFF3ED;
+        padding-left: 30px;
+        line-height: 25px;
+      }
+      #li>div{
+        border: px solid green;
+        height: 390px;
+      }
+      #li>div>h2{
+        font-size: 25px;
+      }
+      #li>div>li{
+        margin-top: 15px;
+      }
+    
+    #li img{
+        height: 380px;
+    }
+    #li>div>div{
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+    }
+    #li>div>div>div>button{
+        height: 50px;
+        width: 200px;
+        border-radius: 30px;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-size: 16px;
+        padding: 14px 35px;
+        background-color: #E57CD8;
+        color: #FFF;
+        cursor: pointer;
+        border: none;
+    }
+    #li>div>div>div>button:hover{
+        background-color: #5e4968;
+        cursor: pointer;
+    }
+    #li>div>div p{
+        width: 90px;
+        font-size: 16px;
+        color: #ffebbd;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    #li>div>div p:hover{
+        color: #e57cd8;
+    }
+    #feature{
+      height: 1650px;
+      margin-top: 60px;
+      background-color: #2c1338;
+    }
+    #feature>div>h2{
+    padding: 70px 0px 0px 0px;
+    color: #FFF3ED;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        width: 70%;
+        gap: 20px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    #container>div:nth-child(1){
+        background-color: #f7d8f3 ;
+        border-radius: 15px;
+    }
+    #container>div:nth-child(2){
+        background-color: #fce5d8 ;
+        border-radius: 15px;
+    }
+    #container>div:nth-child(3){
+        background-color: #fce5d8  ;
+        border-radius: 15px;
+    }
+    #container>div:nth-child(4){
+        background-color: #fff2d3 ;
+        border-radius: 15px;
+    }
+    #container>div>h4+img{
+        height: 150px;
+        width: 100%;
+    }
+    #container>div>h4{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    #container>div>img+p{
+        font-size: 18px;
+       color: #412A4C;;
+       margin-left: 10px;
+    }
+    #container>div>img+p+img{
+        margin-left: 10px;
+    }
+    #featurebtm{
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 15px;
+        background-color: #f7d8f3;
+    }
+    #featurebtm>div>h3{
+        color: #412A4C;
+        font-size: 30px;
+        margin-left: 15px;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: 400;
+        line-height: 35px;
+    }
+    #featurebtm>div>h3+p{
+       color: #6B5A74;
+       width: 100%;
+       font-size: 20px;
+       margin-left: 10px;
+    }
+    #featurebtm>div>h5{
+        font-size: 16px;
+        margin:50px 0px 0px 15px;
+    }
+    #featurebtm>div>h5:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+    #featurebtm>div>img{
+        height: 100%;
+    }
+    #featurebtm+div{
+        border: 0px solid red;
+        width: 50%;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #featurebtm+div>h3{
+        font-size: 30px;
+        color: #FFF3ED;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: 400;
+    }
+    #featurebtm+div>p{
+        text-align: center;
+        font-size: 20px;
+        color: rgb(192, 184, 195);
+    }
+    #featurebtm+div>div>p{
+        color: #C0B8C3;
+        font-size: 17px;
+        margin: 40px 0px 0px -80px;
+    }
+    #featurebtm+div>div>p:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+    #featurebtm+div>div>button{
+        font-size: 17px;
+        margin:30px 0px 0px 50px;
+        height: 50px;
+        width: 30%;
+        border: none;
+        color: white;
+        background-color: #E57CD8;
+        border-radius: 25px;
+    }
+    #featurebtm+div>div>button+p{
+        margin-top: 40px;
+    }
+    #featurebtm+div>div>button:hover{
+        background-color: #5e4968;
+        cursor: pointer;
+    }
+    #featurebtm+div>div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #result{
+        border: 0px solid red;
+        background-color: #fdf1ec ;
+        height: 1050px;
+        width: 100%;
+        margin: auto;
+        margin-top: -45px;
+    }
+    #result>h1{
+        font-size: 50px;
+        color: #412A4C;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: 400;
+        margin: auto;
+        text-align: center;
+       padding: 50px ;
+       width: 60%;
+       line-height: 65px;
+    }
+    #result>h1+div{
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:20px
+        
+    }
+    #result>h1+div>div>h4{
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: -10px;
+        line-height: 25px;
+        color: #E57CD8;
+    }
+    #result>h1+div>div>h4+p{
+        width: 100%;
+        font-size: 20px;
+        color: #412A4C;
+        margin-bottom: 30px;
+        margin-left: -10px;
+    }
+    #result>h1+div>div>h4+p+button{
+        color: #564260;
+        background-color: #fdf1ec ;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        margin-left: -10px;
+        margin-bottom: 30px;
+    }
+    #result>h1+div>div>h4+p+button:hover{
+        color:#E57CD8;
+        cursor: pointer;
+    }
+    #result>h1+div>div>img{
+        width: 100%;
+        border-radius: 15px;
+        margin-left: -10px;
+    }
+    #resultbtm{
+        border: 0px solid red;
+        background-color: #fce5d8;
+        height: 280px;
+        width: 70%;
+        margin:auto;
+        margin-top: 20px;
+    }
+    #resultbtm>div{
+        display: flex;
+        justify-content: space-around;
+    }
+    #resultbtm>div>div>h3{
+        width: 80%;
+        font-size: 25px;
+        color: #412A4C;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    #resultbtm>div>div>p{
+        width: 100%;
+        margin-left: -5px;
+        color: #6B5A74;
+        font-size: 20px;
+    }
+    #resultbtm>div>div>button{
+        margin-top: 50px;
+        height: 50px;
+        width: 200px;
+        border: none;
+        border-radius: 25px;
+        background-color: #e57cd8;
+        color: white;
+        font-size: 17px;
+    }
+    #resultbtm>div>div>button:hover{
+        background-color: #5e4968;
+        cursor: pointer;
+    }
+    hr+div>div{
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        
+    }
+    hr+div>div>p{
+        font-size: 15px;
+        color: #412A4C;
+    }
+    hr+div>div>img{
+        width: 12%;
+        height: 70%;
+        margin-left: 15px;
+    }
+    #LB3{
+        border: 0px solid red;
+        height: 700px;
+        background-color: #FEFBFA;;
+    }
+    #LB3>h1{
+        font-size: 45px;
+        margin-left: 200px;
+        color: #412A4C;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: bold;
+    }
+    #LB3>h1+div{
+        margin-left: 200px;
+    }
+    #LB3>h1+div>button{
+        font-size: 25px;
+        font-family:'GT Haptik Medium',sans-serif;
+        font-size: 1rem;
+        border: none;
+        border-radius: 100px;
+        background: #ffebbd;
+        color: #412A4C;
+        padding: 13px 20px;  
+    }
+    #LB3>h1+div>#btn{
+        color: #ffebbd;
+        background-color:#412A4C ;
+    }
+    #LB3>h1+div+div{
+        border: 0px solid green;
+        display: flex;
+        width: 75%;
+        margin: auto;
+    }
+    #LB3>h1+div+div>div>h3{
+        width: 90%;
+        font-size: 35px;
+        color: #412A4C;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: bold;
+    }
+    #LB3>h1+div+div>div>h3+p{
+        color: #E57CD8;
+        font-size: 17px;
+    }
+    #LB3>h1+div+div>div>h3+p+p{
+        color: #412A4C;
+        width: 81%;
+        font-size: 20px;
+    }
+    #LB2{
+        border: 1px solid #412a4c;
+        height: 1200px;
+        background-color: #412a4c;
+    }
+    #LB2>#card1{
+        text-align: center;
+       background-color: #2c1338;
+        width: 40%;
+        border: 1px solid #2c1338;
+        height: 500px;
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    #card1>button~p>span{
+        text-decoration: underline;
+    }
+    #LB2>#card1>h2{
+       font-size: 40px;
+       color: #FCE5D8;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: bold;
+    }
+    #LB2>#card1>h2+p{
+        margin: 0px 30px 0px 30px;
+        font-size: 20px;
+        color: rgb(252, 229, 216);
+       
+    }
+    #LB2>#card1>h2+p+button{
+        width: 40%;
+        margin-top: 30px;
+        font-family: 'GT Haptik Medium',sans-serif;
+        color: #2C1338;
+        font-weight: bold;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        border-radius: 25px;
+        padding: 11px 22px 19px 26px;
+    }
+    #LB2>#card1>h2+p+button:hover{
+        background-color: #FCE5D8;
+        cursor: pointer;
+    }
+    #LB2>#card1>h2+p+button>.fa-google{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    #LB2>#card1>h2+p+button+button{
+        width: 40%;
+        font-family: 'GT Haptik Medium',sans-serif;
+        color: #2C1338;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        border-radius: 25px;
+        padding: 11px 22px 19px 26px;
+    }
+    #LB2>#card1>h2+p+button+button:hover{
+        background-color: #FCE5D8;
+        cursor: pointer;
+    }
+    #LB2>#card1>h2+p+button+button>.fa-apple{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    #LB2>#card1>h2+p+button+button~button{
+        font-family: 'GT Haptik Medium',sans-serif;
+        color: #2C1338;
+        font-weight: bold;
+        width: 85%;
+        margin-top: 30px;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        border-radius: 25px;
+        padding: 11px 22px 19px 26px;
+    }
+    #LB2>#card1>h2+p+button+button~button+p{
+        color: rgb(252, 229, 216);
+        margin-left: 30px;
+    }
+    #LB2>#card1>h2+p+button+button~button:hover{
+        background-color: #FCE5D8;
+        cursor: pointer;
+    }
+    #LB2>#card1>h2+p+button+button~button>.fa-envelope{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    #LB2>#card2{
+        background-color: #fce5d8;
+        width: 33%;
+        border: 1px solid #fce5d8;
+        height: 350px;
+        margin: -70px 0px 0px 670px;
+    }
+    #LB2>#card2>h3{
+        margin:50px 0px 0px  150px;
+        font-size: 30px;
+        color: #2C1338;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: bold;
+    }
+    #LB2>#card2>p{
+        margin-left: 150px;
+        width: 70%;
+        color: #2C1338;
+        line-height: 25px;
+        font-size: 20px;
+    }
+    #LB2>#card2>button{
+        margin: 20px 0px 0px 150px;
+        font-size: 20px;
+        border: none;
+        border-radius: 25px;
+        height: 50px;
+        color: white;
+        padding: 10px;
+        width: 40%;
+        background-color: #e57cd8;
+    }
+    #LB2>h1{
+        margin-left: 450px;
+        width: 40%;
+        color: #FFF3ED;
+        margin-top: 30px;
+        font-size: 40px;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    #footer{
+        border: 1px solid #2C1338;
+        height: 460px;
+        background-color: #2C1338;
+    }
+    #footerlogo{
+        border: 0px solid green;
+        height: 40px;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #footerlogo>img{
+        height: 100%;
+    }
+    #footerlogo+div{
+        border: 0px solid pink;
+        height: 250px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 20px;
+    }
+    #footerlogo+div>div>p{
+        line-height: 20px;
+        color: rgb(252, 229, 216);
+        
+    }
+    #footerlogo+div>div>h5{
+        margin-left: 0px;
+        color: #9266a6;
+        
+    }
+    #footerlogo+div+div{
+        border: 0px solid red;
+        height: 70px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-size: 30px;
+        color: #FFF3ED;
+    }
+    #footerlogo+div>div>p:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+    #footerlogo+div+div>div:hover{
+        color: #E57CD8;
+        cursor: pointer;
+    }
+   #SLD{
+    border: 0px solid red;
+    background-color: #412a4c ;
+    height: 100px;
+    display: flex;
+    gap: 100px;
+   
+   }
+   #SLD>div>img{
+    height: 60%;
+   }
+   #SLD>div>h5{
+    font-size: 15px;
+    margin-top: -15px;
+    color: #FFF3ED;
+   }
+   #SLD>div>h4{
+    color: #FCE5D8;
+    font-size: 17px;
+    margin-left: 50px;
+    width: 70%;
+   }
+   #SLD+div{
+    border: 1px solid #E57CD8;
+    height: 50px;
+    background-color: #E57CD8;
+   }
+   #SLD+div>p{
+    font-family: 'Inter', sans-serif;
+    color: #2C1338;
+    margin-left: 40px;
+   }
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <div>Back to Toggl Global</div>
+        <div>Products</div>
+        <div>Blog</div>
+        <div>Our Mission</div>
+        <div>Working at Toggl</div>
+    </div>
+    <div id="nav2">
+        <div class="child">
+            <div> 
+            <img onclick="home()" src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png"  alt="">
+            </div>
+            <div>Product</div>
+            <div>Pricing</div>
+            <div>Why Track?</div>
+            <div>Careers</div>
+        </div>
+        <div  class="child">
+            <div><a  href="book a Demo.html">Book a Demo</a></div>
+            <div> <a href="login.html">Log in</a> </div>
+            <div> <a href="">|</a></div>
+           <div><button><a style="color: #E57CD8;text-decoration: none;" href="signup.html">Try for free</a></button></div> 
+        </div>
+    </div>
+    <!-- Navbar bottom -->
+    <div id="navBtm">
+        <div>
+            <div><h1>Simple time tracking to save you <em>time</em> and <em>money</em>.</h1></div>
+            <div><p>Bill accurately, measure profitability, manage workloads — and spend less time on it all.</p>
+            </div>
+            <input type="email" id="email" placeholder="Email"> <br>
+            <input type="password" id="password" placeholder="A strong password"> <br>
+            <div id="logo">
+                <div><button onclick="signup()">Signup with email</button></div>
+                <div>
+                    <div id="or">
+                        <div>
+                            <p>Or signup with:</p>
+                        </div>
+                        <div><button><i class="fa-brands fa-google"></i></button></div>
+                        <div><button><i class="fa-brands fa-apple"></i></button></div>
+                    </div>
+                </div>
+            </div>
+                <p id="P1">By signing up, you agree to our <span>terms of service</span>, <span>privacy and policy</span> to receiving marketing communication from Toggl Track. You can opt out anytime.</p>
+                <h4>TRUSTED BY OVER 6 MILLION USERS ACROSS 120 COUNTRIES</h4>
+                    <div>
+                        <img src="https://public-assets.toggl.com/b/static/21b44745982a70f8f66a90507e5f6ee1/66a3b/brands-mixed-desktop-light.avif" alt="">
+                    </div>  
+                </div>
+        </div>
+    </div>
+
+    <!-- Middle Section -->
+<div id="midh2"><h2>Time tracking for all your productivity and profitability needs</h2></div>          
+        <div>
+        <button id="btn"><em>Employee Time Tracking</em></button>
+        <button>Billing & Invoicing</button>
+        <button>Project Budgeting</button>
+        <button>Reporting</button>
+        <button>Payroll</button>
+        </div>
+    <div id="li">
+        <div>
+            <h2>Make timesheets history.</h2>
+            <li>Get the data you need without disrupting your team's workflow. Track's one-click time tracking syncs across multiple platforms.</li>
+            <li>Get employee buy-in with a tool designed to empower teams with knowledge, not micromanage them.</li>
+            <div>
+                <div><button>Learn more</button></div>
+                <div><p>Or signup for free <i class="fa-solid fa-arrow-right"></i></p></div>
+            </div>
+        </div>
+        <div>
+            <img src="https://public-assets.toggl.com/b/static/2f9323cffe44aa5a7b876e19dbd12a09/fe204/employee-time-tracking-short.avif" alt="">
+        </div>
+    </div>
+    <div id="feature">
+        <div><h2>Why do teams <em>love</em> Toggl Track?</h2>
+        </div>
+      <div id="container">
+        <div>
+            <h4>Users report up to 25% increase in billable hours with accurate time tracking that accounts for every minute spent on client work.</h4>
+            <img src="https://public-assets.toggl.com/b/static/6286ab8ed1c02d9625e9ba57ad687f8e/27604/feature-increasebillables.avif" alt="">
+            
+           </div>
+           <div>
+            <h4>Speed up team adoption with an anti-surveillance platform that gets a "yes" from every employee.</h4>
+            <img src="https://public-assets.toggl.com/b/static/a2fbe9cda087f0b4ddf3b1f8f768e34f/73142/feature-trustemployee.avif" alt="">
+            <p>Toggl Track stands against surveillance.</p>
+            
+           </div>
+           <div>
+            <h4>No training necessary. Get started right away with intuitive and welcoming features.</h4>
+            <img src="https://public-assets.toggl.com/b/static/ee6383ab7e873edf369c3c6b373a3164/77bd7/feature-intuitive.avif" alt="">
+            <p>“The acceptance from all users is very high. I have seen a 40+ year employee move from their Excel-based tracking they have used forever, to this tool without any issue.”</p>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTQiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCA5NCAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuODM3OTEgMS4yNzkwN0M4LjAwODE0IDAuOTM0MTUxIDguNDk5OTkgMC45MzQxNSA4LjY3MDIyIDEuMjc5MDdMMTAuNTcxOCA1LjEzMkMxMC42MzkzIDUuMjY4OTcgMTAuNzcgNS4zNjM5IDEwLjkyMTIgNS4zODU4N0wxNS4xNzMxIDYuMDAzNzFDMTUuNTUzOCA2LjA1OTAzIDE1LjcwNTggNi41MjY4IDE1LjQzMDMgNi43OTUyOUwxMi4zNTM2IDkuNzk0MzdDMTIuMjQ0MiA5LjkwMDk5IDEyLjE5NDMgMTAuMDU0NiAxMi4yMjAxIDEwLjIwNTFMMTIuOTQ2NCAxNC40Mzk5QzEzLjAxMTUgMTQuODE5IDEyLjYxMzUgMTUuMTA4MSAxMi4yNzMxIDE0LjkyOTFMOC40NzAwMiAxMi45Mjk3QzguMzM0ODIgMTIuODU4NyA4LjE3MzMxIDEyLjg1ODcgOC4wMzgxMSAxMi45Mjk3TDQuMjM1MDQgMTQuOTI5MUMzLjg5NDU4IDE1LjEwODEgMy40OTY2NyAxNC44MTkgMy41NjE2OSAxNC40Mzk5TDQuMjg4MDEgMTAuMjA1MUM0LjMxMzgzIDEwLjA1NDYgNC4yNjM5MiA5LjkwMDk5IDQuMTU0NTQgOS43OTQzN0wxLjA3NzggNi43OTUyOUMwLjgwMjM2MiA2LjUyNjggMC45NTQzNTIgNi4wNTkwMyAxLjMzNSA2LjAwMzcxTDUuNTg2OTUgNS4zODU4N0M1LjczODExIDUuMzYzOSA1Ljg2ODc4IDUuMjY4OTcgNS45MzYzNyA1LjEzMkw3LjgzNzkxIDEuMjc5MDdaIiBmaWxsPSIjNkI1QTc0Ii8+CjxwYXRoIGQ9Ik0yNy4xMzA2IDEuMjc3MDZDMjcuMzAwOSAwLjkzMjEzNyAyNy43OTI3IDAuOTMyMTM2IDI3Ljk2MjkgMS4yNzcwNkwyOS44NjQ1IDUuMTI5OTlDMjkuOTMyMSA1LjI2Njk1IDMwLjA2MjcgNS4zNjE4OSAzMC4yMTM5IDUuMzgzODVMMzQuNDY1OSA2LjAwMTdDMzQuODQ2NSA2LjA1NzAxIDM0Ljk5ODUgNi41MjQ3OSAzNC43MjMxIDYuNzkzMjdMMzEuNjQ2MyA5Ljc5MjM2QzMxLjUzNjkgOS44OTg5NyAzMS40ODcgMTAuMDUyNiAzMS41MTI4IDEwLjIwMzFMMzIuMjM5MiAxNC40Mzc5QzMyLjMwNDIgMTQuODE3IDMxLjkwNjMgMTUuMTA2MSAzMS41NjU4IDE0LjkyNzFMMjcuNzYyNyAxMi45Mjc3QzI3LjYyNzUgMTIuODU2NyAyNy40NjYgMTIuODU2NyAyNy4zMzA4IDEyLjkyNzdMMjMuNTI3OCAxNC45MjcxQzIzLjE4NzMgMTUuMTA2MSAyMi43ODk0IDE0LjgxNyAyMi44NTQ0IDE0LjQzNzlMMjMuNTgwNyAxMC4yMDMxQzIzLjYwNjYgMTAuMDUyNiAyMy41NTY2IDkuODk4OTcgMjMuNDQ3MyA5Ljc5MjM2TDIwLjM3MDUgNi43OTMyN0MyMC4wOTUxIDYuNTI0NzkgMjAuMjQ3MSA2LjA1NzAxIDIwLjYyNzcgNi4wMDE3TDI0Ljg3OTcgNS4zODM4NUMyNS4wMzA4IDUuMzYxODkgMjUuMTYxNSA1LjI2Njk1IDI1LjIyOTEgNS4xMjk5OUwyNy4xMzA2IDEuMjc3MDZaIiBmaWxsPSIjNkI1QTc0Ii8+CjxwYXRoIGQ9Ik00Ni40MjIxIDEuMjc3MDZDNDYuNTkyNCAwLjkzMjEzNyA0Ny4wODQyIDAuOTMyMTM2IDQ3LjI1NDQgMS4yNzcwNkw0OS4xNTYgNS4xMjk5OUM0OS4yMjM2IDUuMjY2OTUgNDkuMzU0MiA1LjM2MTg5IDQ5LjUwNTQgNS4zODM4NUw1My43NTc0IDYuMDAxN0M1NC4xMzggNi4wNTcwMSA1NC4yOSA2LjUyNDc5IDU0LjAxNDYgNi43OTMyN0w1MC45Mzc4IDkuNzkyMzZDNTAuODI4NCA5Ljg5ODk3IDUwLjc3ODUgMTAuMDUyNiA1MC44MDQzIDEwLjIwMzFMNTEuNTMwNyAxNC40Mzc5QzUxLjU5NTcgMTQuODE3IDUxLjE5NzggMTUuMTA2MSA1MC44NTczIDE0LjkyNzFMNDcuMDU0MiAxMi45Mjc3QzQ2LjkxOSAxMi44NTY3IDQ2Ljc1NzUgMTIuODU2NyA0Ni42MjIzIDEyLjkyNzdMNDIuODE5MyAxNC45MjcxQzQyLjQ3ODggMTUuMTA2MSA0Mi4wODA5IDE0LjgxNyA0Mi4xNDU5IDE0LjQzNzlMNDIuODcyMiAxMC4yMDMxQzQyLjg5ODEgMTAuMDUyNiA0Mi44NDgxIDkuODk4OTcgNDIuNzM4OCA5Ljc5MjM2TDM5LjY2MiA2Ljc5MzI3QzM5LjM4NjYgNi41MjQ3OSAzOS41Mzg2IDYuMDU3MDEgMzkuOTE5MiA2LjAwMTdMNDQuMTcxMiA1LjM4Mzg1QzQ0LjMyMjMgNS4zNjE4OSA0NC40NTMgNS4yNjY5NSA0NC41MjA2IDUuMTI5OTlMNDYuNDIyMSAxLjI3NzA2WiIgZmlsbD0iIzZCNUE3NCIvPgo8cGF0aCBkPSJNNjUuNzE0OSAxLjI3NzA2QzY1Ljg4NTEgMC45MzIxMzcgNjYuMzc2OSAwLjkzMjEzNiA2Ni41NDcyIDEuMjc3MDZMNjguNDQ4NyA1LjEyOTk5QzY4LjUxNjMgNS4yNjY5NSA2OC42NDcgNS4zNjE4OSA2OC43OTgxIDUuMzgzODVMNzMuMDUwMSA2LjAwMTdDNzMuNDMwNyA2LjA1NzAxIDczLjU4MjcgNi41MjQ3OSA3My4zMDczIDYuNzkzMjdMNzAuMjMwNSA5Ljc5MjM2QzcwLjEyMTIgOS44OTg5NyA3MC4wNzEyIDEwLjA1MjYgNzAuMDk3MSAxMC4yMDMxTDcwLjgyMzQgMTQuNDM3OUM3MC44ODg0IDE0LjgxNyA3MC40OTA1IDE1LjEwNjEgNzAuMTUgMTQuOTI3MUw2Ni4zNDcgMTIuOTI3N0M2Ni4yMTE4IDEyLjg1NjcgNjYuMDUwMyAxMi44NTY3IDY1LjkxNTEgMTIuOTI3N0w2Mi4xMTIgMTQuOTI3MUM2MS43NzE1IDE1LjEwNjEgNjEuMzczNiAxNC44MTcgNjEuNDM4NiAxNC40Mzc5TDYyLjE2NSAxMC4yMDMxQzYyLjE5MDggMTAuMDUyNiA2Mi4xNDA5IDkuODk4OTcgNjIuMDMxNSA5Ljc5MjM2TDU4Ljk1NDggNi43OTMyN0M1OC42NzkzIDYuNTI0NzkgNTguODMxMyA2LjA1NzAxIDU5LjIxMiA2LjAwMTdMNjMuNDYzOSA1LjM4Mzg1QzYzLjYxNTEgNS4zNjE4OSA2My43NDU3IDUuMjY2OTUgNjMuODEzMyA1LjEyOTk5TDY1LjcxNDkgMS4yNzcwNloiIGZpbGw9IiM2QjVBNzQiLz4KPHBhdGggZD0iTTg1LjAwNjkgMS4yNzcwNkM4NS4xNzcxIDAuOTMyMTM3IDg1LjY2ODkgMC45MzIxMzYgODUuODM5MiAxLjI3NzA2TDg3Ljc0MDcgNS4xMjk5OUM4Ny44MDgzIDUuMjY2OTUgODcuOTM5IDUuMzYxODkgODguMDkwMSA1LjM4Mzg1TDkyLjM0MjEgNi4wMDE3QzkyLjcyMjcgNi4wNTcwMSA5Mi44NzQ3IDYuNTI0NzkgOTIuNTk5MyA2Ljc5MzI3TDg5LjUyMjUgOS43OTIzNkM4OS40MTMxIDkuODk4OTcgODkuMzYzMiAxMC4wNTI2IDg5LjM4OTEgMTAuMjAzMUw5MC4xMTU0IDE0LjQzNzlDOTAuMTgwNCAxNC44MTcgODkuNzgyNSAxNS4xMDYxIDg5LjQ0MiAxNC45MjcxTDg1LjYzOSAxMi45Mjc3Qzg1LjUwMzggMTIuODU2NyA4NS4zNDIzIDEyLjg1NjcgODUuMjA3MSAxMi45Mjc3TDgxLjQwNCAxNC45MjcxQzgxLjA2MzUgMTUuMTA2MSA4MC42NjU2IDE0LjgxNyA4MC43MzA2IDE0LjQzNzlMODEuNDU3IDEwLjIwMzFDODEuNDgyOCAxMC4wNTI2IDgxLjQzMjkgOS44OTg5NyA4MS4zMjM1IDkuNzkyMzZMNzguMjQ2NyA2Ljc5MzI3Qzc3Ljk3MTMgNi41MjQ3OSA3OC4xMjMzIDYuMDU3MDEgNzguNTAzOSA2LjAwMTdMODIuNzU1OSA1LjM4Mzg1QzgyLjkwNzEgNS4zNjE4OSA4My4wMzc3IDUuMjY2OTUgODMuMTA1MyA1LjEyOTk5TDg1LjAwNjkgMS4yNzcwNloiIGZpbGw9IiM2QjVBNzQiLz4KPC9zdmc+Cg==" alt="">
+            5/5 stars on G2.com
+            <p>— Chris B, Systems Application Lead in an enterprise team</p>
+           </div>
+           <div>
+            <h4>Make time tracking and reporting a breeze with a beautifully-designed app experience.</h4>
+            <img src="https://public-assets.toggl.com/b/static/ab5bff19a9536d90c2c584c3e402ff1c/47a0a/feature-onetrack.avif" alt="">
+            <p>“I love that it's simple and the aesthetic is beautiful. It's really intuitive and not super complicated.”</p>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTQiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCA5NCAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuODM3OTEgMS4yNzkwN0M4LjAwODE0IDAuOTM0MTUxIDguNDk5OTkgMC45MzQxNSA4LjY3MDIyIDEuMjc5MDdMMTAuNTcxOCA1LjEzMkMxMC42MzkzIDUuMjY4OTcgMTAuNzcgNS4zNjM5IDEwLjkyMTIgNS4zODU4N0wxNS4xNzMxIDYuMDAzNzFDMTUuNTUzOCA2LjA1OTAzIDE1LjcwNTggNi41MjY4IDE1LjQzMDMgNi43OTUyOUwxMi4zNTM2IDkuNzk0MzdDMTIuMjQ0MiA5LjkwMDk5IDEyLjE5NDMgMTAuMDU0NiAxMi4yMjAxIDEwLjIwNTFMMTIuOTQ2NCAxNC40Mzk5QzEzLjAxMTUgMTQuODE5IDEyLjYxMzUgMTUuMTA4MSAxMi4yNzMxIDE0LjkyOTFMOC40NzAwMiAxMi45Mjk3QzguMzM0ODIgMTIuODU4NyA4LjE3MzMxIDEyLjg1ODcgOC4wMzgxMSAxMi45Mjk3TDQuMjM1MDQgMTQuOTI5MUMzLjg5NDU4IDE1LjEwODEgMy40OTY2NyAxNC44MTkgMy41NjE2OSAxNC40Mzk5TDQuMjg4MDEgMTAuMjA1MUM0LjMxMzgzIDEwLjA1NDYgNC4yNjM5MiA5LjkwMDk5IDQuMTU0NTQgOS43OTQzN0wxLjA3NzggNi43OTUyOUMwLjgwMjM2MiA2LjUyNjggMC45NTQzNTIgNi4wNTkwMyAxLjMzNSA2LjAwMzcxTDUuNTg2OTUgNS4zODU4N0M1LjczODExIDUuMzYzOSA1Ljg2ODc4IDUuMjY4OTcgNS45MzYzNyA1LjEzMkw3LjgzNzkxIDEuMjc5MDdaIiBmaWxsPSIjNkI1QTc0Ii8+CjxwYXRoIGQ9Ik0yNy4xMzA2IDEuMjc3MDZDMjcuMzAwOSAwLjkzMjEzNyAyNy43OTI3IDAuOTMyMTM2IDI3Ljk2MjkgMS4yNzcwNkwyOS44NjQ1IDUuMTI5OTlDMjkuOTMyMSA1LjI2Njk1IDMwLjA2MjcgNS4zNjE4OSAzMC4yMTM5IDUuMzgzODVMMzQuNDY1OSA2LjAwMTdDMzQuODQ2NSA2LjA1NzAxIDM0Ljk5ODUgNi41MjQ3OSAzNC43MjMxIDYuNzkzMjdMMzEuNjQ2MyA5Ljc5MjM2QzMxLjUzNjkgOS44OTg5NyAzMS40ODcgMTAuMDUyNiAzMS41MTI4IDEwLjIwMzFMMzIuMjM5MiAxNC40Mzc5QzMyLjMwNDIgMTQuODE3IDMxLjkwNjMgMTUuMTA2MSAzMS41NjU4IDE0LjkyNzFMMjcuNzYyNyAxMi45Mjc3QzI3LjYyNzUgMTIuODU2NyAyNy40NjYgMTIuODU2NyAyNy4zMzA4IDEyLjkyNzdMMjMuNTI3OCAxNC45MjcxQzIzLjE4NzMgMTUuMTA2MSAyMi43ODk0IDE0LjgxNyAyMi44NTQ0IDE0LjQzNzlMMjMuNTgwNyAxMC4yMDMxQzIzLjYwNjYgMTAuMDUyNiAyMy41NTY2IDkuODk4OTcgMjMuNDQ3MyA5Ljc5MjM2TDIwLjM3MDUgNi43OTMyN0MyMC4wOTUxIDYuNTI0NzkgMjAuMjQ3MSA2LjA1NzAxIDIwLjYyNzcgNi4wMDE3TDI0Ljg3OTcgNS4zODM4NUMyNS4wMzA4IDUuMzYxODkgMjUuMTYxNSA1LjI2Njk1IDI1LjIyOTEgNS4xMjk5OUwyNy4xMzA2IDEuMjc3MDZaIiBmaWxsPSIjNkI1QTc0Ii8+CjxwYXRoIGQ9Ik00Ni40MjIxIDEuMjc3MDZDNDYuNTkyNCAwLjkzMjEzNyA0Ny4wODQyIDAuOTMyMTM2IDQ3LjI1NDQgMS4yNzcwNkw0OS4xNTYgNS4xMjk5OUM0OS4yMjM2IDUuMjY2OTUgNDkuMzU0MiA1LjM2MTg5IDQ5LjUwNTQgNS4zODM4NUw1My43NTc0IDYuMDAxN0M1NC4xMzggNi4wNTcwMSA1NC4yOSA2LjUyNDc5IDU0LjAxNDYgNi43OTMyN0w1MC45Mzc4IDkuNzkyMzZDNTAuODI4NCA5Ljg5ODk3IDUwLjc3ODUgMTAuMDUyNiA1MC44MDQzIDEwLjIwMzFMNTEuNTMwNyAxNC40Mzc5QzUxLjU5NTcgMTQuODE3IDUxLjE5NzggMTUuMTA2MSA1MC44NTczIDE0LjkyNzFMNDcuMDU0MiAxMi45Mjc3QzQ2LjkxOSAxMi44NTY3IDQ2Ljc1NzUgMTIuODU2NyA0Ni42MjIzIDEyLjkyNzdMNDIuODE5MyAxNC45MjcxQzQyLjQ3ODggMTUuMTA2MSA0Mi4wODA5IDE0LjgxNyA0Mi4xNDU5IDE0LjQzNzlMNDIuODcyMiAxMC4yMDMxQzQyLjg5ODEgMTAuMDUyNiA0Mi44NDgxIDkuODk4OTcgNDIuNzM4OCA5Ljc5MjM2TDM5LjY2MiA2Ljc5MzI3QzM5LjM4NjYgNi41MjQ3OSAzOS41Mzg2IDYuMDU3MDEgMzkuOTE5MiA2LjAwMTdMNDQuMTcxMiA1LjM4Mzg1QzQ0LjMyMjMgNS4zNjE4OSA0NC40NTMgNS4yNjY5NSA0NC41MjA2IDUuMTI5OTlMNDYuNDIyMSAxLjI3NzA2WiIgZmlsbD0iIzZCNUE3NCIvPgo8cGF0aCBkPSJNNjUuNzE0OSAxLjI3NzA2QzY1Ljg4NTEgMC45MzIxMzcgNjYuMzc2OSAwLjkzMjEzNiA2Ni41NDcyIDEuMjc3MDZMNjguNDQ4NyA1LjEyOTk5QzY4LjUxNjMgNS4yNjY5NSA2OC42NDcgNS4zNjE4OSA2OC43OTgxIDUuMzgzODVMNzMuMDUwMSA2LjAwMTdDNzMuNDMwNyA2LjA1NzAxIDczLjU4MjcgNi41MjQ3OSA3My4zMDczIDYuNzkzMjdMNzAuMjMwNSA5Ljc5MjM2QzcwLjEyMTIgOS44OTg5NyA3MC4wNzEyIDEwLjA1MjYgNzAuMDk3MSAxMC4yMDMxTDcwLjgyMzQgMTQuNDM3OUM3MC44ODg0IDE0LjgxNyA3MC40OTA1IDE1LjEwNjEgNzAuMTUgMTQuOTI3MUw2Ni4zNDcgMTIuOTI3N0M2Ni4yMTE4IDEyLjg1NjcgNjYuMDUwMyAxMi44NTY3IDY1LjkxNTEgMTIuOTI3N0w2Mi4xMTIgMTQuOTI3MUM2MS43NzE1IDE1LjEwNjEgNjEuMzczNiAxNC44MTcgNjEuNDM4NiAxNC40Mzc5TDYyLjE2NSAxMC4yMDMxQzYyLjE5MDggMTAuMDUyNiA2Mi4xNDA5IDkuODk4OTcgNjIuMDMxNSA5Ljc5MjM2TDU4Ljk1NDggNi43OTMyN0M1OC42NzkzIDYuNTI0NzkgNTguODMxMyA2LjA1NzAxIDU5LjIxMiA2LjAwMTdMNjMuNDYzOSA1LjM4Mzg1QzYzLjYxNTEgNS4zNjE4OSA2My43NDU3IDUuMjY2OTUgNjMuODEzMyA1LjEyOTk5TDY1LjcxNDkgMS4yNzcwNloiIGZpbGw9IiM2QjVBNzQiLz4KPHBhdGggZD0iTTg1LjAwNjkgMS4yNzcwNkM4NS4xNzcxIDAuOTMyMTM3IDg1LjY2ODkgMC45MzIxMzYgODUuODM5MiAxLjI3NzA2TDg3Ljc0MDcgNS4xMjk5OUM4Ny44MDgzIDUuMjY2OTUgODcuOTM5IDUuMzYxODkgODguMDkwMSA1LjM4Mzg1TDkyLjM0MjEgNi4wMDE3QzkyLjcyMjcgNi4wNTcwMSA5Mi44NzQ3IDYuNTI0NzkgOTIuNTk5MyA2Ljc5MzI3TDg5LjUyMjUgOS43OTIzNkM4OS40MTMxIDkuODk4OTcgODkuMzYzMiAxMC4wNTI2IDg5LjM4OTEgMTAuMjAzMUw5MC4xMTU0IDE0LjQzNzlDOTAuMTgwNCAxNC44MTcgODkuNzgyNSAxNS4xMDYxIDg5LjQ0MiAxNC45MjcxTDg1LjYzOSAxMi45Mjc3Qzg1LjUwMzggMTIuODU2NyA4NS4zNDIzIDEyLjg1NjcgODUuMjA3MSAxMi45Mjc3TDgxLjQwNCAxNC45MjcxQzgxLjA2MzUgMTUuMTA2MSA4MC42NjU2IDE0LjgxNyA4MC43MzA2IDE0LjQzNzlMODEuNDU3IDEwLjIwMzFDODEuNDgyOCAxMC4wNTI2IDgxLjQzMjkgOS44OTg5NyA4MS4zMjM1IDkuNzkyMzZMNzguMjQ2NyA2Ljc5MzI3Qzc3Ljk3MTMgNi41MjQ3OSA3OC4xMjMzIDYuMDU3MDEgNzguNTAzOSA2LjAwMTdMODIuNzU1OSA1LjM4Mzg1QzgyLjkwNzEgNS4zNjE4OSA4My4wMzc3IDUuMjY2OTUgODMuMTA1MyA1LjEyOTk5TDg1LjAwNjkgMS4yNzcwNloiIGZpbGw9IiM2QjVBNzQiLz4KPC9zdmc+Cg==" alt="">
+            5/5 stars on G2.com
+            <p>— Lupita S, Community Manager for an SMB</p>
+           </div>
+      </div>
+      <div id="featurebtm">
+        <div>
+            <h3>The only time tracking tool with over 100+ integrations</h3>
+            <p>From Asana to Zapier, Jira, Salesforce and much more — integrate Toggl Track with tools your team already uses.</p>
+            <h5>Explore integrations <i class="fa-solid fa-arrow-right"></i></h5>
+        </div>
+        <div>
+            <img src="https://public-assets.toggl.com/b/static/ebd5e3f62e8f0ff1038ea4b37811be34/eb6c2/feature-integrations.avif" alt="">
+        </div>
+      </div>
+      <div>
+        <h3>Join 5 million users tracking their time to get results</h3>
+        <p>All plans come with a free, 30-day trial of Toggl Track Premium. Upgrade at the end of the trial or continue using Track for free.</p>
+        <div>
+        <button>Start tracing for free</button>
+        <p>Or explore pricing plans <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+      </div>
+      <div id="result">
+        <h1>Companies that use Toggl Track see <em>results</em> in profit and productivity</h1>
+        <div>
+            <div>
+                <h4>20% increase in profitability</h4>
+                <p>at Sweat+Co PR agency, with accurate billable hours tracking.</p>
+                <button>Read case study <i class="fa-solid fa-arrow-right"></i></button>
+                <img src="https://public-assets.toggl.com/b/static/688b536c11e2e2d366240687a2e83c1a/80f52/cs-team-sweatandco.avif" alt="">
+            </div>
+            <div>
+                <h4>100% time tracking adoption</h4>
+                <p>at software consultancy Newlogic for accurate reporting.</p>
+                <button>Read case study <i class="fa-solid fa-arrow-right"></i></button>
+                <img src="https://public-assets.toggl.com/b/static/23cc7d4553237da72a6cd3f8f3aef5f5/80f52/cs-newlogic.avif" alt="">
+            </div>
+            <div>
+                <h4>40+ hours saved per month</h4>
+                <p>at Perception Engineering with simple, one-click time tracking and invoicing.</p>
+                <button>Read case study <i class="fa-solid fa-arrow-right"></i></button>
+                <img src="https://public-assets.toggl.com/b/static/52ecd2ee94b3c4b931b6cee0c7dab0e3/80f52/case-study-perception-engineering.avif" alt="">
+            </div>
+        </div>
+        <div id="resultbtm">
+          <div>
+            <div>
+            <h3>Onboarding a large team? We’d love to show you around.</h3>
+            <p>Teams of 10+ are eligible for a custom demo to see how Toggl Track works at scale.</p>
+            </div>
+            <div><button>Book a demo</button></div>
+          </div>
+          <hr color="blue;">
+          <hr color="blue;">
+          <div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAkFBMVEUAAADlfNjfeNPie9fme9jjfNflfNjlfdnlfNnkfNfkfNjketflfNnmfNjkfNjmfdjjfNfkfdfketfngNfifNnietbkgNrkfdjke9fke9fkftjmfdrme9jlfNj+9vPyueboi9z75/D1yOnrld797/Lmg9rzwOfwseTsoeD63+753+742OznhNruquL20Or0weisAFfWAAAAHXRSTlMAoBAg4ECA7+/AvzDPv7DfgGBgIFBQMHBwkF+Pj9s76gEAAAPjSURBVGjezZvbctowFEUlX7ABYwwBQtocY+6UlPT//67JNJPdiSJblyMn6zUPK0fa2mMLEPZE43klyyJJ6JU8GY1ktRyL4MRrmdDnFHIe7h+IljKndhK5jAKI01FORpRL5qUemIgxfcxmTkdkS5n2bwaj9AvMsMd+CZPkg8++3+fkRzJ3DfeI/JnEvQ8NcvvRo5/ExWNkud4F8ZFYrfs4J06Ssbn6B3Hzw1Q9IH4GrGp+OdT9y6Hml7PFjD9wYwpJ61GLEwpJHuvVUUJhKfT1+pNC86hTzyk8a81m56Qh/JaPqA8m/a84WPd+vECuZl1SX0hlbOqP1DVo/HFLqU/S3scGE7ex+QcviZvj7bTb7EnDJGTIL4f6leeGPicOd7bP9Rtbjbx6dyfES1O/80QAoNwWxEuzrYFmz9MwSTu+qMGJVJC2iHh5rv9nRwpYdO4l39QmbloypxwRB2f6HMmf8n39Ad0Jz3lfBxBxsCEdMe+zkqp+Ii1r5u2+wtpSa9jwgtg4fVAfoFZJXtzEA04XuFAbEWPULrVJzsCYr1mawwf1idqZi4pUWCK+PVI7FVfMj1vDiAPJ9ZT4XH9gT12UPG414mfqpOBp87NNxHHAM/JnX5tUqepuD+/+6BTxhkxocR83ryf2ejNXo0o93c3WsCOuapX6ujHNjto4qTnzdd9qsLE5XScyRXvGnsxGudSWVQpyrftgtI7NwTbiINE+OhhtYrO1rlIwFKUuagbyo6I+k41besT32SHiQIqqoyfBpjPiV7Kh0j8ib7rk59olZ2ApxuQo39eOVYrntYjc5GrEL2QHXscs5VDjT3YUeC+xk6P2UPrG4L3knhzkJ9cqBbMX9x3ZyzceEUfUXsis5ZfatUrB1OTe4Y8iOh2cqxRIo/uWnSL3jTjuW6LMU34lB94u9ybkJkfO7Clxg+0kR5U6LTkW3UGOKnVJ+RsVdbJjzBk+K0K9uMh3ZA/uz5E2Wzmq1DVpSFuXnCXiuMG2Gfz3L78qBUPzz8cg961SjG08OOT+EcfY6uDm8is5Ett9Dgy5b85wtgHKzUx+2JMbU2Vs5dmp42HiqSFHZlCaxg0c97ebixlBU7nLKDwZVlxZ9dDMhIYHCs2D0BEVFJZpBJn/lnsfL7CikKxEKzMKx+wbf18xnHzwzb+fCnnvagSu15iB1ZQ4yVbCgjtOeRELK6IHvg6PhC2zjGe918KBuwn5M4yFG7Np/0NjdEk+SOy0k33ovtwMv2YafoEZ9vIrzNh3m9Rlg1iwsigNxcM0EuxEi87pM7mAmJvVTBYabyLvYxGc1aKSw2GS/VMmRSmr+cph3r+YI0Wjt4i4VAAAAABJRU5ErkJggg==" alt="">
+                <p>Cross-platform apps for all time tracking preferences.</p>
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAkFBMVEUAAADlfNjfeNPie9fme9jjfNflfNjlfdnlfNnkfNfkfNjketflfNnmfNjkfNjmfdjjfNfkfdfketfngNfifNnietbkgNrkfdjke9fke9fkftjmfdrme9jlfNj+9vPyueboi9z75/D1yOnrld797/Lmg9rzwOfwseTsoeD63+753+742OznhNruquL20Or0weisAFfWAAAAHXRSTlMAoBAg4ECA7+/AvzDPv7DfgGBgIFBQMHBwkF+Pj9s76gEAAAPjSURBVGjezZvbctowFEUlX7ABYwwBQtocY+6UlPT//67JNJPdiSJblyMn6zUPK0fa2mMLEPZE43klyyJJ6JU8GY1ktRyL4MRrmdDnFHIe7h+IljKndhK5jAKI01FORpRL5qUemIgxfcxmTkdkS5n2bwaj9AvMsMd+CZPkg8++3+fkRzJ3DfeI/JnEvQ8NcvvRo5/ExWNkud4F8ZFYrfs4J06Ssbn6B3Hzw1Q9IH4GrGp+OdT9y6Hml7PFjD9wYwpJ61GLEwpJHuvVUUJhKfT1+pNC86hTzyk8a81m56Qh/JaPqA8m/a84WPd+vECuZl1SX0hlbOqP1DVo/HFLqU/S3scGE7ex+QcviZvj7bTb7EnDJGTIL4f6leeGPicOd7bP9Rtbjbx6dyfES1O/80QAoNwWxEuzrYFmz9MwSTu+qMGJVJC2iHh5rv9nRwpYdO4l39QmbloypxwRB2f6HMmf8n39Ad0Jz3lfBxBxsCEdMe+zkqp+Ii1r5u2+wtpSa9jwgtg4fVAfoFZJXtzEA04XuFAbEWPULrVJzsCYr1mawwf1idqZi4pUWCK+PVI7FVfMj1vDiAPJ9ZT4XH9gT12UPG414mfqpOBp87NNxHHAM/JnX5tUqepuD+/+6BTxhkxocR83ryf2ejNXo0o93c3WsCOuapX6ujHNjto4qTnzdd9qsLE5XScyRXvGnsxGudSWVQpyrftgtI7NwTbiINE+OhhtYrO1rlIwFKUuagbyo6I+k41besT32SHiQIqqoyfBpjPiV7Kh0j8ib7rk59olZ2ApxuQo39eOVYrntYjc5GrEL2QHXscs5VDjT3YUeC+xk6P2UPrG4L3knhzkJ9cqBbMX9x3ZyzceEUfUXsis5ZfatUrB1OTe4Y8iOh2cqxRIo/uWnSL3jTjuW6LMU34lB94u9ybkJkfO7Clxg+0kR5U6LTkW3UGOKnVJ+RsVdbJjzBk+K0K9uMh3ZA/uz5E2Wzmq1DVpSFuXnCXiuMG2Gfz3L78qBUPzz8cg961SjG08OOT+EcfY6uDm8is5Ett9Dgy5b85wtgHKzUx+2JMbU2Vs5dmp42HiqSFHZlCaxg0c97ebixlBU7nLKDwZVlxZ9dDMhIYHCs2D0BEVFJZpBJn/lnsfL7CikKxEKzMKx+wbf18xnHzwzb+fCnnvagSu15iB1ZQ4yVbCgjtOeRELK6IHvg6PhC2zjGe918KBuwn5M4yFG7Np/0NjdEk+SOy0k33ovtwMv2YafoEZ9vIrzNh3m9Rlg1iwsigNxcM0EuxEi87pM7mAmJvVTBYabyLvYxGc1aKSw2GS/VMmRSmr+cph3r+YI0Wjt4i4VAAAAABJRU5ErkJggg==" alt="">
+                <p>GDPR-compliant. Your security is our priority.</p>
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAkFBMVEUAAADlfNjfeNPie9fme9jjfNflfNjlfdnlfNnkfNfkfNjketflfNnmfNjkfNjmfdjjfNfkfdfketfngNfifNnietbkgNrkfdjke9fke9fkftjmfdrme9jlfNj+9vPyueboi9z75/D1yOnrld797/Lmg9rzwOfwseTsoeD63+753+742OznhNruquL20Or0weisAFfWAAAAHXRSTlMAoBAg4ECA7+/AvzDPv7DfgGBgIFBQMHBwkF+Pj9s76gEAAAPjSURBVGjezZvbctowFEUlX7ABYwwBQtocY+6UlPT//67JNJPdiSJblyMn6zUPK0fa2mMLEPZE43klyyJJ6JU8GY1ktRyL4MRrmdDnFHIe7h+IljKndhK5jAKI01FORpRL5qUemIgxfcxmTkdkS5n2bwaj9AvMsMd+CZPkg8++3+fkRzJ3DfeI/JnEvQ8NcvvRo5/ExWNkud4F8ZFYrfs4J06Ssbn6B3Hzw1Q9IH4GrGp+OdT9y6Hml7PFjD9wYwpJ61GLEwpJHuvVUUJhKfT1+pNC86hTzyk8a81m56Qh/JaPqA8m/a84WPd+vECuZl1SX0hlbOqP1DVo/HFLqU/S3scGE7ex+QcviZvj7bTb7EnDJGTIL4f6leeGPicOd7bP9Rtbjbx6dyfES1O/80QAoNwWxEuzrYFmz9MwSTu+qMGJVJC2iHh5rv9nRwpYdO4l39QmbloypxwRB2f6HMmf8n39Ad0Jz3lfBxBxsCEdMe+zkqp+Ii1r5u2+wtpSa9jwgtg4fVAfoFZJXtzEA04XuFAbEWPULrVJzsCYr1mawwf1idqZi4pUWCK+PVI7FVfMj1vDiAPJ9ZT4XH9gT12UPG414mfqpOBp87NNxHHAM/JnX5tUqepuD+/+6BTxhkxocR83ryf2ejNXo0o93c3WsCOuapX6ujHNjto4qTnzdd9qsLE5XScyRXvGnsxGudSWVQpyrftgtI7NwTbiINE+OhhtYrO1rlIwFKUuagbyo6I+k41besT32SHiQIqqoyfBpjPiV7Kh0j8ib7rk59olZ2ApxuQo39eOVYrntYjc5GrEL2QHXscs5VDjT3YUeC+xk6P2UPrG4L3knhzkJ9cqBbMX9x3ZyzceEUfUXsis5ZfatUrB1OTe4Y8iOh2cqxRIo/uWnSL3jTjuW6LMU34lB94u9ybkJkfO7Clxg+0kR5U6LTkW3UGOKnVJ+RsVdbJjzBk+K0K9uMh3ZA/uz5E2Wzmq1DVpSFuXnCXiuMG2Gfz3L78qBUPzz8cg961SjG08OOT+EcfY6uDm8is5Ett9Dgy5b85wtgHKzUx+2JMbU2Vs5dmp42HiqSFHZlCaxg0c97ebixlBU7nLKDwZVlxZ9dDMhIYHCs2D0BEVFJZpBJn/lnsfL7CikKxEKzMKx+wbf18xnHzwzb+fCnnvagSu15iB1ZQ4yVbCgjtOeRELK6IHvg6PhC2zjGe918KBuwn5M4yFG7Np/0NjdEk+SOy0k33ovtwMv2YafoEZ9vIrzNh3m9Rlg1iwsigNxcM0EuxEi87pM7mAmJvVTBYabyLvYxGc1aKSw2GS/VMmRSmr+cph3r+YI0Wjt4i4VAAAAABJRU5ErkJggg==" alt="">
+                <p>Top-rated support with a response time of 3 hours!</p>
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAkFBMVEUAAADlfNjfeNPie9fme9jjfNflfNjlfdnlfNnkfNfkfNjketflfNnmfNjkfNjmfdjjfNfkfdfketfngNfifNnietbkgNrkfdjke9fke9fkftjmfdrme9jlfNj+9vPyueboi9z75/D1yOnrld797/Lmg9rzwOfwseTsoeD63+753+742OznhNruquL20Or0weisAFfWAAAAHXRSTlMAoBAg4ECA7+/AvzDPv7DfgGBgIFBQMHBwkF+Pj9s76gEAAAPjSURBVGjezZvbctowFEUlX7ABYwwBQtocY+6UlPT//67JNJPdiSJblyMn6zUPK0fa2mMLEPZE43klyyJJ6JU8GY1ktRyL4MRrmdDnFHIe7h+IljKndhK5jAKI01FORpRL5qUemIgxfcxmTkdkS5n2bwaj9AvMsMd+CZPkg8++3+fkRzJ3DfeI/JnEvQ8NcvvRo5/ExWNkud4F8ZFYrfs4J06Ssbn6B3Hzw1Q9IH4GrGp+OdT9y6Hml7PFjD9wYwpJ61GLEwpJHuvVUUJhKfT1+pNC86hTzyk8a81m56Qh/JaPqA8m/a84WPd+vECuZl1SX0hlbOqP1DVo/HFLqU/S3scGE7ex+QcviZvj7bTb7EnDJGTIL4f6leeGPicOd7bP9Rtbjbx6dyfES1O/80QAoNwWxEuzrYFmz9MwSTu+qMGJVJC2iHh5rv9nRwpYdO4l39QmbloypxwRB2f6HMmf8n39Ad0Jz3lfBxBxsCEdMe+zkqp+Ii1r5u2+wtpSa9jwgtg4fVAfoFZJXtzEA04XuFAbEWPULrVJzsCYr1mawwf1idqZi4pUWCK+PVI7FVfMj1vDiAPJ9ZT4XH9gT12UPG414mfqpOBp87NNxHHAM/JnX5tUqepuD+/+6BTxhkxocR83ryf2ejNXo0o93c3WsCOuapX6ujHNjto4qTnzdd9qsLE5XScyRXvGnsxGudSWVQpyrftgtI7NwTbiINE+OhhtYrO1rlIwFKUuagbyo6I+k41besT32SHiQIqqoyfBpjPiV7Kh0j8ib7rk59olZ2ApxuQo39eOVYrntYjc5GrEL2QHXscs5VDjT3YUeC+xk6P2UPrG4L3knhzkJ9cqBbMX9x3ZyzceEUfUXsis5ZfatUrB1OTe4Y8iOh2cqxRIo/uWnSL3jTjuW6LMU34lB94u9ybkJkfO7Clxg+0kR5U6LTkW3UGOKnVJ+RsVdbJjzBk+K0K9uMh3ZA/uz5E2Wzmq1DVpSFuXnCXiuMG2Gfz3L78qBUPzz8cg961SjG08OOT+EcfY6uDm8is5Ett9Dgy5b85wtgHKzUx+2JMbU2Vs5dmp42HiqSFHZlCaxg0c97ebixlBU7nLKDwZVlxZ9dDMhIYHCs2D0BEVFJZpBJn/lnsfL7CikKxEKzMKx+wbf18xnHzwzb+fCnnvagSu15iB1ZQ4yVbCgjtOeRELK6IHvg6PhC2zjGe918KBuwn5M4yFG7Np/0NjdEk+SOy0k33ovtwMv2YafoEZ9vIrzNh3m9Rlg1iwsigNxcM0EuxEi87pM7mAmJvVTBYabyLvYxGc1aKSw2GS/VMmRSmr+cph3r+YI0Wjt4i4VAAAAABJRU5ErkJggg==" alt="">
+                <p>99% uptime for your peace of mind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lower Bottom 3 div -->
+      <div id="LB3">
+        <h1>The right feature set for <em>every</em> team</h1>
+        <div>
+        <button id="btn"><em>Freelancers</em></button>
+        <button>Agencies & professional services</button>
+        <button>Enterprise teams</button>
+        </div>
+        <div>
+            <div>
+                <h3>Need time tracking that helps you stay productive and bill clients accurately?</h3>
+                <p>Learn how Toggl track can help you <i class="fa-solid fa-arrow-right"></i></p>
+                <p>"Toggl Track is indispensable for keeping track of my hours by project so I can create invoices. It makes it easy to calculate the time I need for certain types of work. All in all, it is the best way to accurately prepare your financial claims."
+                    Ema N. (Editor)</p>
+            </div>
+            <div>
+                <img src="https://public-assets.toggl.com/b/static/bed57e40b10610cc4477f5d05bcb524d/55c71/type-freelancer.avif" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="LB2">
+            <h1>Switch to the time tracking tool <em>70,000+</em> teams across the world swear by</h1>
+       
+        <div id="card1">
+          <h2>Sign up for free</h2>
+          <p>All plans come with a free, 30-day trial of Toggl Track Premium—no credit card required. Upgrade at the end of the trial or continue using Track for free.</p>
+          <button><i class="fa-brands fa-google"></i>Sign up via Google</button>
+          <button><i class="fa-brands fa-apple"></i>Sign up via Apple</button> <br>
+          <button><i class="fa-regular fa-envelope"></i>Or sign up via an email</button>
+          <p style="width: 80%; margin-top: 30px;">By signing up, you agree to our <span>terms of service</span>, <span>privacy policy</span> and to receiving marketing communication from Toggl Track. You can opt out anytime.</p>
+        </div>
+        <div id="card2">
+          <h3>Prefer a product demo instead?</h3>
+          <p>Teams of 10+ are eligible for a personalized demo to see how Toggl Track can meet your time tracking goals</p>
+          <button>Book a demo</button>
+        </div>
+    </div>
+    <div id="footer">
+       <div id="footerlogo">
+        <img src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="">
+       </div>
+       <div>
+        <div>
+            <h5>TOGGLE GLOBAL</h5>
+            <p>Blog</p>
+            <p>Our Mission</p>
+            <p>Working at Toggl</p>
+            <p>Legal Terms</p>
+        </div>
+        <div>
+            <h5>PRODUCT</h5>
+            <p>Features</p>
+            <p>Pricing</p>
+            <p>Integrations</p>
+            <p>Case Studies</p>
+            <p>API</p>
+        </div>
+        <div>
+            <h5>USE CASES</h5>
+            <p>Billing and Invoicing</p>
+            <p>Employee Time Tracking</p>
+            <p>Project Budgeting</p>
+            <p>Reporting</p>
+            <p>Payroll</p>
+        </div>
+        <div>
+            <h5>DOWNLOAD</h5>
+            <p>Mobile Apps</p>
+            <p>Desktop Apps</p>
+            <p>Browser Extensions</p>
+        </div>
+        <div>
+            <h5>HELP</h5>
+            <p>Support & Knowledge Base</p>
+            <p>Request A Demo</p>
+            <p>Contact Us</p>
+        </div>
+        <div>
+            <h5>RESOURCES</h5>
+            <p>Time Management Hub</p>
+            <p>Work From Home Hub</p>
+            <p>Business Resources</p>
+            <p>Productivity Resources</p>
+            <p>Timesheet Templates</p>
+            <p>Media Kit</p>
+        </div>
+       </div>
+       <div>
+        <div><i class="fa-brands fa-twitter"></i></div>
+        <div><i class="fa-brands fa-facebook"></i></div>
+        <div><i class="fa-brands fa-instagram"></i></div>
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div><i class="fa-brands fa-linkedin"></i></div>
+        <div><i class="fa-brands fa-github"></i></div>
+       </div>
+    </div>
+    <!-- 2nd last div -->
+    <div id="SLD">
+        <div>
+            <h4>Discover other Toggl tools:</h4>
+        </div>
+        <div>
+            <img src="https://www.howtoweb.co/wp-content/uploads/2020/06/Logos-website-15-900x500.png" alt="">
+            <h5>Beautifully simple work planning</h5>
+        </div>
+        <div>
+            <img src="https://www.howtoweb.co/wp-content/uploads/2020/06/Logos-website-12-900x500.png" alt="">
+            <h5>Skills-based hiring</h5>
+        </div>
+    </div>
+    <div>
+      <p>© 2022 Toggl. All rights reserved.</p>
+    </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function Try(){
+        window.location.href="signup.html"
+    }
+    function home(){
+        window.location.href="index.html"
+    }
+</script>
